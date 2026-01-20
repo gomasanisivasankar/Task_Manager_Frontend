@@ -1,0 +1,717 @@
+/* Modal Container */
+.addModalElement {
+    border-radius: 22px;
+    background: #fff;
+    padding: 30px;
+    max-width: 800px;
+    width: 90vw;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+    margin: 20px auto;
+}
+
+.title {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.asterisk {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #FF0000;
+}
+
+/* Input Title */
+.inputTitle {
+    border: 1px solid #e2e2e2;
+    border-radius: 8px;
+    padding: 12px 16px;
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s ease;
+    display: block;
+}
+
+.inputTitle:focus {
+    border-color: #17a2b8;
+    box-shadow: 0 0 0 2px rgba(23, 162, 184, 0.1);
+}
+
+.inputTitle::placeholder {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #9B959F;
+}
+
+/* Priority Section */
+.prioritySection {
+    margin: 25px 0;
+}
+
+.priorityLabel {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.priorityOptions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.addPriority,
+.addPriorityColor {
+    border-radius: 8px;
+    padding: 10px 16px;
+    height: 44px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: left;
+    color: #767575;
+    background-color: transparent;
+    border: 1px solid #e2e2e2;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    flex: 1;
+    min-width: 150px;
+    justify-content: flex-start;
+    white-space: nowrap;
+}
+
+.addPriority:hover {
+    background-color: #f5f5f5;
+}
+
+.addPriorityColor {
+    background: #eeecec;
+    border-color: transparent;
+}
+
+.addPriority img,
+.addPriorityColor img {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+/* Checklist Section */
+.checklistSection {
+    margin: 25px 0;
+}
+
+.checklistLabel {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.checklist {
+    overflow-y: auto;
+    max-height: 200px;
+    padding: 15px;
+    border: 1px solid #e2e2e2;
+    border-radius: 8px;
+    background: #fafafa;
+    margin-top: 8px;
+}
+
+/* Buttons */
+.buttonsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.leftButtons {
+    display: flex;
+    gap: 12px;
+}
+
+.rightButtons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.button1 {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #707070;
+    box-shadow: 0 2px 12px 0 rgba(130, 105, 140, 0.2);
+    border: 1px solid #e2e2e2;
+    border-radius: 8px;
+    height: 48px;
+    min-width: 180px;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0 20px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.button1:hover {
+    background-color: #f5f5f5;
+}
+
+.cancel {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #CF3636;
+    box-shadow: 0 2px 12px 0 rgba(130, 105, 140, 0.2);
+    border: 1px solid #cf3636;
+    border-radius: 8px;
+    height: 48px;
+    min-width: 150px;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0 20px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cancel:hover {
+    background-color: rgba(207, 54, 54, 0.05);
+}
+
+.save {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 8px;
+    height: 48px;
+    min-width: 150px;
+    background: #17a2b8;
+    border: none;
+    cursor: pointer;
+    padding: 0 20px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.save:hover {
+    background: #138496;
+}
+/* ==================== */
+/* MOBILE OPTIMIZATION - SMALLER CONTAINER */
+/* ==================== */
+
+/* Tablets and Large Phones (600px - 768px) */
+@media screen and (max-width: 768px) {
+    .addModalElement {
+        padding: 16px;
+        max-height: 85vh;
+        width: 85vw; /* Reduced from 92vw */
+        max-width: 85vw; /* Reduced from 92vw */
+        margin: 10px auto;
+        border-radius: 16px;
+    }
+    
+    .title,
+    .asterisk,
+    .priorityLabel,
+    .checklistLabel {
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 6px;
+    }
+    
+    .inputTitle {
+        height: 42px;
+        font-size: 15px;
+        padding: 10px 12px;
+        border-radius: 8px;
+        margin-bottom: 8px;
+    }
+    
+    .inputTitle::placeholder {
+        font-size: 15px;
+    }
+    
+    .prioritySection,
+    .checklistSection {
+        margin: 16px 0;
+    }
+    
+    .priorityOptions {
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 6px;
+    }
+    
+    .addPriority,
+    .addPriorityColor {
+        width: 100%;
+        min-width: 100%;
+        height: 42px;
+        font-size: 13px;
+        justify-content: flex-start;
+        padding: 10px 14px;
+        border-radius: 8px;
+    }
+    
+    .addPriority img,
+    .addPriorityColor img {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .checklist {
+        max-height: 150px;
+        padding: 10px;
+        margin-top: 6px;
+        border-radius: 8px;
+    }
+    
+    .buttonsContainer {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+        margin-top: 20px;
+    }
+    
+    .leftButtons,
+    .rightButtons {
+        width: 100%;
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .button1 {
+        width: 100%;
+        min-width: 100%;
+        height: 42px;
+        font-size: 13px;
+        padding: 0 16px;
+        margin-bottom: 0;
+    }
+    
+    .cancel,
+    .save {
+        width: 100%;
+        min-width: 100%;
+        height: 42px;
+        font-size: 13px;
+        padding: 0 16px;
+    }
+    
+    .rightButtons {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 8px;
+    }
+    
+    .cancel,
+    .save {
+        flex: 1;
+        min-width: 0;
+    }
+}
+
+/* Mobile Phones (480px - 600px) */
+@media screen and (max-width: 600px) {
+    .addModalElement {
+        padding: 14px;
+        max-height: 90vh;
+        width: 88vw; /* Reduced from 94vw */
+        max-width: 88vw; /* Reduced from 94vw */
+        margin: 8px auto;
+        border-radius: 14px;
+    }
+    
+    .title,
+    .asterisk,
+    .priorityLabel,
+    .checklistLabel {
+        font-size: 11px;
+        line-height: 16px;
+        margin-bottom: 5px;
+    }
+    
+    .inputTitle {
+        height: 40px;
+        font-size: 14px;
+        padding: 8px 12px;
+        border-radius: 6px;
+        margin-bottom: 6px;
+    }
+    
+    .inputTitle::placeholder {
+        font-size: 14px;
+    }
+    
+    .prioritySection,
+    .checklistSection {
+        margin: 14px 0;
+    }
+    
+    .priorityOptions {
+        gap: 6px;
+        margin-top: 4px;
+    }
+    
+    .addPriority,
+    .addPriorityColor {
+        height: 40px;
+        font-size: 12px;
+        padding: 8px 12px;
+        border-radius: 6px;
+    }
+    
+    .addPriority img,
+    .addPriorityColor img {
+        width: 14px;
+        height: 14px;
+    }
+    
+    .checklist {
+        max-height: 130px;
+        padding: 8px;
+        margin-top: 4px;
+        border-radius: 6px;
+    }
+    
+    .buttonsContainer {
+        gap: 10px;
+        margin-top: 18px;
+    }
+    
+    .leftButtons,
+    .rightButtons {
+        gap: 6px;
+    }
+    
+    .button1,
+    .cancel,
+    .save {
+        height: 40px;
+        font-size: 12px;
+        padding: 0 14px;
+    }
+    
+    .rightButtons {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .cancel,
+    .save {
+        width: 100%;
+    }
+}
+
+/* Small Mobile Phones (360px - 480px) */
+@media screen and (max-width: 480px) {
+    .addModalElement {
+        padding: 12px;
+        max-height: 92vh;
+        width: 92vw; /* Reduced from 96vw */
+        max-width: 92vw; /* Reduced from 96vw */
+        margin: 4px auto;
+        border-radius: 12px;
+    }
+    
+    .title,
+    .asterisk,
+    .priorityLabel,
+    .checklistLabel {
+        font-size: 10px;
+        line-height: 14px;
+        margin-bottom: 4px;
+    }
+    
+    .inputTitle {
+        height: 38px;
+        font-size: 13px;
+        padding: 8px 10px;
+        border-radius: 6px;
+        margin-bottom: 4px;
+    }
+    
+    .inputTitle::placeholder {
+        font-size: 13px;
+    }
+    
+    .prioritySection,
+    .checklistSection {
+        margin: 12px 0;
+    }
+    
+    .priorityOptions {
+        gap: 5px;
+        margin-top: 3px;
+    }
+    
+    .addPriority,
+    .addPriorityColor {
+        height: 38px;
+        font-size: 11px;
+        padding: 8px 10px;
+        border-radius: 6px;
+    }
+    
+    .addPriority img,
+    .addPriorityColor img {
+        width: 12px;
+        height: 12px;
+    }
+    
+    .checklist {
+        max-height: 120px;
+        padding: 6px;
+        margin-top: 3px;
+        border-radius: 6px;
+    }
+    
+    .buttonsContainer {
+        gap: 8px;
+        margin-top: 16px;
+    }
+    
+    .leftButtons,
+    .rightButtons {
+        gap: 5px;
+    }
+    
+    .button1 {
+        height: 38px;
+        font-size: 11px;
+        padding: 0 12px;
+    }
+    
+    .cancel,
+    .save {
+        height: 38px;
+        font-size: 11px;
+        padding: 0 12px;
+    }
+}
+
+/* Extra Small Mobile Phones (under 360px) */
+@media screen and (max-width: 360px) {
+    .addModalElement {
+        padding: 10px;
+        max-height: 95vh;
+        width: 94vw; /* Reduced from 98vw */
+        max-width: 94vw; /* Reduced from 98vw */
+        margin: 2px auto;
+        border-radius: 10px;
+    }
+    
+    .title,
+    .asterisk,
+    .priorityLabel,
+    .checklistLabel {
+        font-size: 9px;
+        line-height: 12px;
+        margin-bottom: 3px;
+    }
+    
+    .inputTitle {
+        height: 36px;
+        font-size: 12px;
+        padding: 6px 8px;
+        border-radius: 5px;
+        margin-bottom: 3px;
+    }
+    
+    .inputTitle::placeholder {
+        font-size: 12px;
+    }
+    
+    .prioritySection,
+    .checklistSection {
+        margin: 10px 0;
+    }
+    
+    .priorityOptions {
+        gap: 4px;
+        margin-top: 2px;
+    }
+    
+    .addPriority,
+    .addPriorityColor {
+        height: 36px;
+        font-size: 10px;
+        padding: 6px 8px;
+        border-radius: 5px;
+        gap: 4px;
+    }
+    
+    .addPriority img,
+    .addPriorityColor img {
+        width: 10px;
+        height: 10px;
+    }
+    
+    .checklist {
+        max-height: 100px;
+        padding: 4px;
+        margin-top: 2px;
+        border-radius: 5px;
+    }
+    
+    .buttonsContainer {
+        gap: 6px;
+        margin-top: 14px;
+    }
+    
+    .leftButtons,
+    .rightButtons {
+        gap: 4px;
+    }
+    
+    .button1,
+    .cancel,
+    .save {
+        height: 36px;
+        font-size: 10px;
+        padding: 0 10px;
+    }
+}
+
+/* ==================== */
+/* TOUCH DEVICE OPTIMIZATION */
+/* ==================== */
+@media (hover: none) and (pointer: coarse) {
+    .addModalElement {
+        margin: 5px auto;
+        padding: 14px;
+        width: 88vw; /* Added width for touch devices */
+        max-width: 88vw; /* Added max-width for touch devices */
+    }
+    
+    .inputTitle {
+        min-height: 44px;
+        font-size: 16px;
+        padding: 12px;
+    }
+    
+    .addPriority,
+    .addPriorityColor {
+        min-height: 48px;
+        height: 48px;
+        font-size: 14px;
+    }
+    
+    .button1,
+    .cancel,
+    .save {
+        min-height: 48px;
+        height: 48px;
+        font-size: 14px;
+    }
+    
+    .checklist {
+        max-height: 140px;
+    }
+}
+
+/* ==================== */
+/* LANDSCAPE MODE OPTIMIZATION */
+/* ==================== */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    .addModalElement {
+        max-height: 90vh;
+        padding: 12px;
+        margin: 5px auto;
+        width: 88vw; /* Added width for landscape */
+        max-width: 88vw; /* Added max-width for landscape */
+    }
+    
+    .checklist {
+        max-height: 100px;
+        padding: 8px;
+    }
+    
+    .priorityOptions {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+    
+    .addPriority,
+    .addPriorityColor {
+        flex: 1;
+        min-width: calc(33.333% - 4px);
+        font-size: 11px;
+        padding: 8px 10px;
+        height: 40px;
+    }
+    
+    .inputTitle {
+        height: 40px;
+        font-size: 14px;
+    }
+}
+
+/* ==================== */
+/* SAFE AREA INSETS FOR NOTCHED PHONES */
+/* ==================== */
+@supports (padding: max(0px)) {
+    @media screen and (max-width: 768px) {
+        .addModalElement {
+            padding-left: max(12px, env(safe-area-inset-left));
+            padding-right: max(12px, env(safe-area-inset-right));
+            padding-top: max(12px, env(safe-area-inset-top));
+            padding-bottom: max(12px, env(safe-area-inset-bottom));
+        }
+    }
+}

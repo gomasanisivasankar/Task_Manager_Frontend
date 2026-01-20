@@ -1,0 +1,149 @@
+.leftSideBar {
+    backdrop-filter: blur(33.07671356201172px);
+    background: #17a2b8;
+    height: 100vh;
+    width: 60vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.font1 {
+    font-family: Open Sans;
+    font-size: 33px;
+    font-weight: 600;
+    line-height: 66px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.font2 {
+    font-family: Open Sans;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.font {
+    position: relative;
+    top: -91px;
+}
+
+/* Optional: Add responsive image styles */
+.leftSideBar img {
+    max-width: 100%;
+    height: auto;
+}
+.contentWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imageContainer {
+    width: 70%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 1024px) {
+    .font1 {
+        font-size: 28px;
+        line-height: 50px;
+    }
+
+    .font2 {
+        font-size: 17px;
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .leftSideBar {
+        width: 100vw;
+        height: 40vh;
+        min-height: 300px;
+        justify-content: flex-start;
+        padding-top: 40px;
+    }
+
+    .font1 {
+        font-size: 24px;
+        line-height: 40px;
+    }
+
+    .font2 {
+        font-size: 15px;
+        line-height: 26px;
+    }
+
+    .font {
+        top: -50px;
+        padding: 0 20px;
+    }
+
+    .leftSideBar img {
+        max-width: 80%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .imageContainer {
+        width: 60%;
+        max-width: 300px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .leftSideBar {
+        height: 35vh;
+        min-height: 250px;
+        padding-top: 30px;
+    }
+
+    .font1 {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .font2 {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .font {
+        top: -40px;
+        padding: 0 15px;
+    }
+
+    .leftSideBar img {
+        max-width: 70%;
+    }
+
+    .imageContainer {
+        width: 50%;
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 360px) {
+    .font1 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}

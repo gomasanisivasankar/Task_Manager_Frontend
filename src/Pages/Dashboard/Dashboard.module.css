@@ -1,0 +1,247 @@
+.dashboard {
+    --sidebar-width: 224px;
+    display: flex;
+    min-height: 100vh;
+}
+
+.sideNavBar {
+    border-right: 1px solid #edf5fe;
+    width: var(--sidebar-width);
+    height: 100vh;
+
+    background: #fff;
+
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 12px;
+}
+
+.mainContent {
+    flex: 1;
+    width: 100%;
+    margin-left: var(--sidebar-width);
+    padding: 16px 16px 24px;
+    box-sizing: border-box;
+    min-width: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 21px;
+
+    font-family: Poppins;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.activeItem {
+    width: 211px;
+    height: 51px;
+
+    background: rgba(67, 145, 237, 0.1);
+
+    font-family: Poppins;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 21px;
+
+    padding: 3% 3% 3% 3%;
+}
+
+.inactiveItem {
+    font-family: Poppins;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: #707070;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 21px;
+
+    padding: 3% 3% 3% 3%;
+}
+
+.spacer {
+    flex: 1;
+}
+
+.logoutText {
+    font-family: Noto Sans;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0px;
+    text-align: center;
+
+}
+
+.yesLogout {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    color: #FFFFFF;
+
+
+    border-radius: 12px;
+    /* padding: 17px 4px; */
+    padding: 5px 1px;
+    width: 300px;
+    height: 45px;
+
+    box-shadow: 0 2px 12px 0 rgba(130, 105, 140, 0.2);
+    background: #17a2b8;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.cancel {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    color: #CF3636;
+
+    border: 1px solid #cf3636;
+    border-radius: 12px;
+    width: 300px;
+    height: 45px;
+
+    box-shadow: 0 2px 12px 0 rgba(130, 105, 140, 0.2);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.customModal {
+    border-radius: 11px;
+
+
+    background: #fff;
+}
+
+.topRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding-top: 12px;
+}
+
+.navItems {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px 0;
+}
+
+.navItemsCollapsed {
+    /* on desktop stay visible */
+}
+
+.mobileToggle {
+    display: none;
+    background: transparent;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    width: 40px;
+    height: 36px;
+    font-size: 18px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+    .dashboard {
+        flex-direction: column;
+    }
+
+    .sideNavBar {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        height: auto;
+        z-index: 20;
+        border-right: 0;
+        border-bottom: 1px solid #edf5fe;
+        padding: 8px 12px 8px 12px;
+    }
+
+    .mainContent {
+        margin-left: 0;
+        padding: 12px 12px 20px;
+    }
+
+    .logo {
+        gap: 12px;
+        font-size: 18px;
+        justify-content: flex-start;
+        padding: 0 12px;
+    }
+
+    .mobileToggle {
+        display: inline-flex;
+    }
+
+    .navItemsCollapsed {
+        display: none;
+    }
+
+    .activeItem,
+    .inactiveItem {
+        width: auto;
+        height: auto;
+        font-size: 16px;
+        justify-content: flex-start;
+        gap: 12px;
+        padding: 10px 12px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .yesLogout,
+    .cancel {
+        width: 100%;
+        max-width: 300px;
+    }
+}
