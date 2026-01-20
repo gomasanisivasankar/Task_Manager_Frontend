@@ -1,4 +1,4 @@
 export const Url = () => {
-    return "https://task-manager-backend-theta-fawn.vercel.app/";
+    return process.env.REACT_APP_API_URL;
     // return "http://localhost:5000";
   };
