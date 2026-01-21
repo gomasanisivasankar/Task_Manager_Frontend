@@ -6,8 +6,6 @@ import { useParams } from 'react-router-dom';
 import NotFound from './Components/Dashboard/NotFound/NotFound';
 import { useSelector } from 'react-redux';
 import ProtectedRoutes from './ProtectedRoutes/ProtectedRoutes';
-import { Url } from './Utils/Url';
-
 function App() {
   const loader = 'Assets/loader.gif';
   const isLoaderToggle = useSelector(state => state.loaderAction.loader);
